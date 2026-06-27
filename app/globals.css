@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-950: #060D1C;
+  --navy-900: #0B1930;
+  --navy-800: #0F2347;
+  --navy-700: #163054;
+  --amber-500: #C8960A;
+  --amber-400: #E8B020;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-400: #94A3B8;
+  --slate-100: #F1F5F9;
+  --slate-50: #F8FAFC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #334155;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--amber-500);
+  outline-offset: 2px;
+}
+
+/* Skip to content */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: var(--amber-500);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(11, 25, 48, 0.12);
+}
+
+/* Amber CTA button */
+.btn-amber {
+  background: var(--amber-500);
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  padding: 10px 22px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+.btn-amber:hover {
+  background: var(--amber-400);
+}
+
+/* Ghost button (on dark bg) */
+.btn-ghost {
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  padding: 10px 22px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  background: transparent;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+.btn-ghost:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Dot grid background (hero) */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Section padding */
+.section-pad {
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+/* Max-width container */
+.container-mnl {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 640px) {
+  .section-pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container-mnl {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Client logo marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.client-marquee {
+  animation: marquee 28s linear infinite;
+  width: max-content;
+}
+.client-marquee:hover {
+  animation-play-state: paused;
+}
