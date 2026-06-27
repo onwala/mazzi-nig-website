@@ -14,7 +14,7 @@ export const processSteps: ProcessStep[] = [
   {
     number: 3,
     title: 'System Development',
-    body: 'We develop and tailor all QMS/EMS/OHSMS documentation — manuals, procedures, records — to your specific operations and scope.',
+    body: 'We develop and tailor all QMS/EMS/OHSMS documentation: manuals, procedures, work instructions and records, built specifically around your operations and scope.',
   },
   {
     number: 4,

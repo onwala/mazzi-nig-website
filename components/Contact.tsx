@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { IconPhone, IconMail, IconMapPin, IconUser, IconArrowRight } from '@tabler/icons-react';
+import { IconPhone, IconMail, IconMapPin, IconArrowRight } from '@tabler/icons-react';
 import { contactDetails, serviceOptions } from '@/data/contact';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
@@ -292,32 +292,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Contact person card */}
-            <div
-              className="rounded-sm p-5 mt-2"
-              style={{ background: '#0B1930' }}
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <div
-                  className="flex items-center justify-center rounded-full"
-                  style={{ width: '40px', height: '40px', background: 'rgba(200,150,10,0.2)' }}
-                >
-                  <IconUser size={20} style={{ color: '#C8960A' }} aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="font-body font-bold text-white" style={{ fontSize: '14px' }}>
-                    {contactDetails.name}
-                  </p>
-                  <p className="font-body" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>
-                    {contactDetails.title}
-                  </p>
-                </div>
-              </div>
-              <p className="font-body" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.55)', lineHeight: '1.65' }}>
-                Available for calls Monday – Friday, 8am – 5pm WAT.
-                Response to enquiries guaranteed within {contactDetails.responseTime}.
-              </p>
-            </div>
           </div>
         </div>
       </div>

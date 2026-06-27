@@ -2,7 +2,7 @@ import {
   IconBuildingFactory2,
   IconTrophy,
   IconHeadset,
-  IconGlobe,
+  IconClipboardCheck,
 } from '@tabler/icons-react';
 
 const points = [
@@ -14,7 +14,7 @@ const points = [
   {
     icon: IconTrophy,
     title: 'Proven Track Record',
-    body: 'Dozens of companies across the continent have achieved first-time certification success with Mazzi, across API Q1, ISO 9001, ISO 14001, and ISO 45001.',
+    body: 'Dozens of companies have achieved first-time certification success with Mazzi, across API Q1, ISO 9001, ISO 14001, and ISO 45001.',
   },
   {
     icon: IconHeadset,
@@ -22,9 +22,9 @@ const points = [
     body: 'We stay with you from the first gap assessment through to certification and beyond, including surveillance audit support and annual continual improvement reviews.',
   },
   {
-    icon: IconGlobe,
-    title: 'Pan-African Reach',
-    body: 'Headquartered in Port Harcourt with a growing presence across the continent. We understand the regulatory and operational landscape of Africa\'s energy markets inside out.',
+    icon: IconClipboardCheck,
+    title: 'Regulatory Fluency',
+    body: 'We speak the language of local regulators and international certification bodies, ensuring your system satisfies both without duplication of effort.',
   },
 ];
 

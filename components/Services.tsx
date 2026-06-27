@@ -25,7 +25,7 @@ export default function Services() {
           >
             Everything You Need to
             <br />
-            Get — and Stay — Certified
+            Get and Stay Certified
           </h2>
         </div>
 

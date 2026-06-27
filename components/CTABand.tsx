@@ -27,8 +27,8 @@ export default function CTABand() {
             maxWidth: '640px',
           }}
         >
-          Let us Build Your Certification
-          <span style={{ color: '#C8960A' }}> Roadmap</span> Together
+          Let us Build Your
+          <span style={{ color: '#C8960A' }}> Certification Roadmap</span>
         </h2>
         <p
           className="font-body mx-auto mb-8"
