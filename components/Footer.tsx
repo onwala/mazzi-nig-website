@@ -47,7 +47,7 @@ export default function Footer() {
                 maxWidth: '240px',
               }}
             >
-              Management Systems Consultancy, Auditing and Training — Port Harcourt, Nigeria.
+              Management Systems Consultancy, Auditing and Training.
             </p>
           </div>
 
