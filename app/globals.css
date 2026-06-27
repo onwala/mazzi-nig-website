@@ -154,3 +154,6 @@ body {
 .client-marquee:hover {
   animation-play-state: paused;
 }
+.client-logo:hover {
+  filter: grayscale(0%) opacity(1) !important;
+}
